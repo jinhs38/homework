@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define TRIANGLE_HEIGHT 5
 
@@ -42,12 +43,17 @@ void print_triangle_line(int line_num, const char *text)
 
 int main(void)
 {
-    char date[11] = "2023-08-20";
-    char name[100] = "아서 덴트";
+    char date[11];
+    char name[100];
     int year, month, day;
 
-    printf("[현재 날짜를 \"yyyy-mm-dd\" 형식으로 입력하세요]: %s\n", date);
-    printf("[당신의 이름을 입력하세요]: %s\n", name);
+    printf("[현재 날짜를 \"yyyy-mm-dd\" 형식으로 입력하세요]: ");
+    printf("2023-08-20\n");
+    strcpy(date, "2023-08-20");
+
+    printf("[당신의 이름을 입력하세요]: ");
+    printf("아서 덴트\n");
+    strcpy(name, "아서 덴트");
 
     printf("**입력이 정상적으로 처리되었습니다.**\n");
 
