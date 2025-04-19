@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define NUM_CANDIDATES 6
+#define NUM_CANDIDATES 6필숨
 #define BUFFER_SIZE 256
 
 const char *member_info[] = {
